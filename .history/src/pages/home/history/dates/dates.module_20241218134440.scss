@@ -1,0 +1,10 @@
+.dates {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 80px;
+  z-index: -1;
+  font-size: 150px;
+}

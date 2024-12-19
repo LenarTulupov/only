@@ -1,0 +1,9 @@
+.slider-content {
+  display: flex;
+  cursor: grabbing;
+  &__title {
+    font-family: var(--font-second);
+    font-weight: 400;
+    font-size: 25px;
+  }
+}

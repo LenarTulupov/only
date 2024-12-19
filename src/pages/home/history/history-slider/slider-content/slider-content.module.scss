@@ -1,0 +1,14 @@
+.slider-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  cursor: grabbing;
+  &__title {
+    font-family: var(--font-second);
+    font-weight: 400;
+    font-size: 25px;
+    @media(max-width: 480px) {
+      font-size: 16px;
+    }
+  }
+}

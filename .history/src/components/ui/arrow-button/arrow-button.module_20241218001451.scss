@@ -1,0 +1,26 @@
+.arrow-button {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--main-color-rgba);
+  background-color: transparent;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.arrow-button_slider {
+  width: 40px;
+  height: 40px;
+  // color: var(--accent-color);
+  border: none;
+  box-shadow: 0 0 15px 0 rgba(56, 119, 238, 0.1);
+  stroke: #42567a
+}
+.left {
+  transform: rotate(0deg);
+}
+.right {
+  transform: rotate(180deg);
+}
+

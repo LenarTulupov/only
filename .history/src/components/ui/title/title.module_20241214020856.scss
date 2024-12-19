@@ -1,0 +1,40 @@
+.title {
+  line-height: 150%;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    height: 120px;
+    width: 6px;
+    background: linear-gradient(to bottom, var(--accent-color) 0%, var(--accent-second) 100%);
+    visibility: hidden;
+  }
+  &.title_before::before {
+    visibility: visible; // Показываем псевдоэлемент
+  }
+  &__color-main {
+    color: var(--main-color);
+  }
+
+  &__color-blue {
+    color: var(--accent-color);
+  }
+
+  &__color-pink {
+    color: var(--accent-second);
+  }
+
+  &__size-main {
+    font-size: var(--font-size-main);
+  }
+  &__size-small {
+    font-size: var(--font-size-small);
+  }
+
+  &__size-big {
+    font-size: var(--font-size-big);
+  }
+}

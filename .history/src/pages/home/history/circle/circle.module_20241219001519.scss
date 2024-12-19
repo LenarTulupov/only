@@ -1,0 +1,129 @@
+.circle {
+  position: relative;
+  width: 530px;
+  height: 530px;
+  border: 1px solid rgba(66, 86, 122, 0.1);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-origin: center;
+}
+
+.circle__btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6px;
+  height: 6px;
+  border: none;
+  background-color: var(--main-color);
+  border-radius: 100%;
+  color: var(--main-color);
+  line-height: 30px;
+  font-size: 0;
+  cursor: pointer;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+    font-size 0.3s ease-in-out;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background: transparent;
+  }
+
+  .sub-title {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    margin-left: 76px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .sub-title.active {
+    opacity: 1;
+  }
+
+  &:hover,
+  &.active {
+    width: 56px;
+    height: 56px;
+    font-size: 16px;
+    background-color: #f4f5f9;
+    outline: 1px solid rgba(48, 62, 88, 0.5);
+  }
+
+  &-1 {
+    transform: rotate(300deg) translateX(265px) rotate(60deg);
+  }
+
+  &-2 {
+    transform: rotate(0deg) translateX(265px) rotate(0deg);
+  }
+
+  &-3 {
+    transform: rotate(60deg) translateX(265px) rotate(-60deg);
+  }
+
+  &-4 {
+    transform: rotate(120deg) translateX(265px) rotate(-120deg);
+  }
+
+  &-5 {
+    transform: rotate(180deg) translateX(265px) rotate(-180deg);
+  }
+
+  &-6 {
+    transform: rotate(240deg) translateX(265px) rotate(-240deg);
+  }
+}
+@media(min-width: 992px) {
+  .circle__btn-1 {
+    transform: rotate(300deg) translateX(265px) rotate(60deg);
+  }
+  .circle__btn-2 {
+    transform: rotate(0deg) translateX(265px) rotate(0deg);
+  }
+  .circle__btn-3 {
+    transform: rotate(60deg) translateX(265px) rotate(-60deg);
+  }
+  .circle__btn-4 {
+    transform: rotate(120deg) translateX(265px) rotate(-120deg);
+  }
+  .circle__btn-5 {
+    transform: rotate(180deg) translateX(265px) rotate(-180deg);
+  }
+  .circle__btn-6 {
+    transform: rotate(240deg) translateX(225px) rotate(-240deg);
+  }
+}
+@media(max-width: 992px) {
+  .circle__btn-1 {
+    transform: rotate(300deg) translateX(225px) rotate(60deg);
+  }
+  .circle__btn-2 {
+    transform: rotate(0deg) translateX(225px) rotate(0deg);
+  }
+  .circle__btn-3 {
+    transform: rotate(60deg) translateX(225px) rotate(-60deg);
+  }
+  .circle__btn-4 {
+    transform: rotate(120deg) translateX(225px) rotate(-120deg);
+  }
+  .circle__btn-5 {
+    transform: rotate(180deg) translateX(225px) rotate(-180deg);
+  }
+  .circle__btn-6 {
+    transform: rotate(240deg) translateX(225px) rotate(-240deg);
+  }
+}

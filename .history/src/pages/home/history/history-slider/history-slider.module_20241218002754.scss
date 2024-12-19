@@ -1,0 +1,14 @@
+.history-slider {
+  position: relative;
+}
+.next {
+  position: absolute;
+  top: 50%;
+  trans
+}
+.prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+}

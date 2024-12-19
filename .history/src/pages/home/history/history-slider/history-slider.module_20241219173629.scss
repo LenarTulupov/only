@@ -1,0 +1,45 @@
+:global {
+  .swiper {
+    marhin-bottom: 100px;
+  }
+  .swiper-pagination {
+    --swiper-pagination-bottom: 0 ;
+    width: fit-content;
+  }
+  .swiper-pagination-bullet {
+    background-color: var(--main-color);
+    opacity: 0.4;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: var(--main-color);
+    opacity: 1;
+  }
+}
+
+.history-slider {
+  position: relative;
+  margin-top: 56px;
+}
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -60px;
+  z-index: 10;
+}
+.prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -60px;
+  z-index: 10;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}

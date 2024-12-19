@@ -1,0 +1,34 @@
+.history {
+  padding: 50px 0;
+  &__title {
+    line-height: 1.2;
+    width: 353px;
+    padding-left: 78px;
+    height: fit-content;
+
+  }
+  &__content {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 615px;
+    &-col-1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}
+.circle {
+  margin-top: 45px;
+}
+.divider_horizontal {
+  position: absolute;
+  top: calc(50% + 3px);
+  left: 0;
+  transform: translateY(-50%);
+  z-index: -10;
+}
+.step-navigation {
+  padding-left: 78px;
+}

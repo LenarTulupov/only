@@ -1,0 +1,18 @@
+.circle {
+  margin: 0 auto;
+}
+.history__title {
+  padding-left: 78px;
+  width: 353px;
+}
+.divider_horizontal {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: -10;
+}
+.history__circle-wrapper {
+  position: relative;
+}
+
